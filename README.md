@@ -79,7 +79,7 @@ python3 -m unittest discover -s tests -v
 python3 -m py_compile hostcheck.py
 ```
 
-15 tests cover boundary thresholds, reserved blocks, malformed/missing telemetry, inode-less filesystems, exit-code precedence, JSON output, unsupported platforms, and invalid input. A live smoke test was run in a Linux cloud workspace; this is **not** RHEL, Azure, fleet, or production validation. CI is supplied for Python 3.9 and 3.12 on Ubuntu, but has not run remotely while this is an unpublished draft.
+15 tests cover boundary thresholds, reserved blocks, malformed/missing telemetry, inode-less filesystems, exit-code precedence, JSON output, unsupported platforms, and invalid input. A live smoke test was run in a Linux cloud workspace; this is **not** RHEL, Azure, fleet, or production validation. CI is supplied for Python 3.9 and 3.12 on Ubuntu. Check the repository's Actions tab for remote run results; the local checks above do not establish remote CI success.
 
 ## Design choices and scope
 
@@ -87,6 +87,6 @@ The checker stays deliberately small and dependency-free. Missing telemetry is v
 
 Potential next steps: cgroup-aware memory checks, selected systemd service checks with timeouts, and configuration-file support. These are not implemented.
 
-## Review before publication
+## Provenance and responsible use
 
-This draft was generated and tested with AI assistance. Review the code, run it in your own Linux lab, and be prepared to explain its calculations and limitations. Do not describe it as used at an employer unless that genuinely occurs with permission. No employer source code or data is included.
+This project was generated and tested with AI assistance. Review the code, run it in your own Linux lab, and be prepared to explain its calculations and limitations. Do not describe it as used at an employer unless that genuinely occurs with permission. No employer source code or data is included.
