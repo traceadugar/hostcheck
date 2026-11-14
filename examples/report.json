@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "tool_version": "0.1.0",
+  "observed_at": "2026-01-01T00:00:00+00:00",
+  "checks": [
+    {"name": "memory_used", "status": "ok", "value": 42.0, "unit": "percent", "warning": 80.0, "critical": 90.0},
+    {"name": "filesystem_used", "status": "warning", "value": 84.0, "unit": "percent", "warning": 80.0, "critical": 90.0},
+    {"name": "inodes_used", "status": "ok", "value": 18.0, "unit": "percent", "warning": 80.0, "critical": 90.0}
+  ],
+  "exit_code": 1
+}
